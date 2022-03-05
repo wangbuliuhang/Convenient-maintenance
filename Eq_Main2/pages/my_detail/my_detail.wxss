@@ -1,0 +1,28 @@
+/* page/my/my.wxss */
+.show_btn{
+  margin: 15px 10px 10px 15px;
+  height: 500px;
+  border: 1px solid;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0);
+}
+.change_detail{
+  margin: 10px 10px 10px 10px;
+  background-color: rgb(127, 178, 224);
+  border-radius: 20px;
+  font-style: oblique;
+  color: cadetblue;
+}
+.information{
+  margin: 15px 10px 10px 15px;
+  height: 150px;
+  border: 1px solid;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0);
+}
+.detail1{
+  display: block;
+  margin:5px 0 0 5px;
+  font-style: oblique;
+  color: rgb(39, 70, 77);
+}

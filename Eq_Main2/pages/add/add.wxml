@@ -1,0 +1,32 @@
+<view class="c-minheight wx-view_oNZQGl" data-c_e_id="wx_view_95f7593a">
+    <image class="wx-image_v9arlL" bindtap="userindex" data-c_e_id="wx_image_13462ca4" mode="scaleToFill" src="http://qty83k.creatby.com/materials/183835/origin/a41e3b53488d1f13a8b43ccdd5e9f0cc_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/183835/origin/a41e3b53488d1f13a8b43ccdd5e9f0cc_origin.png); "/>
+</view>
+<view class="c-minheight wx-view_muJbSH" data-c_e_id="wx_view_ff4e73a9">
+    <view class="c-minheight_wx-view_Z2bAjf" data-c_e_id="wx_view_043c9614">
+        <button class="wx-button_BvicQf" bindtap="chooseimage" data-c_e_id="wx_button_550b427f"  size="default" type="default">
+            添加图片
+        </button>
+        <image wx:for="{{tempFilePaths}}" wx:for-index="idx" wx:key="unique" src="{{item}}" class="cho_img"  style="width: 25%; height: 150rpx; margin-left: {{idx*100+30}}px" />
+        <view class="c-minheight wx-view_0ZjBIE" data-c_e_id="wx_view_3267e0f9">
+            <form class="c-minheight wx-form_v7WsNK" data-c_e_id="wx_form_db7de00c" bindsubmit="submit">
+                <view class="c-minheight wx-view_Ha1LIQ" data-c_e_id="wx_view_6116cd1d">
+                    <text class="c-block wx-text_kEBvme" data-c_e_id="wx_text_425bf761">标题：</text>
+                    <input class="c-block c-fullwidth wx-input_smu3rF" data-c_e_id="wx_input_215a271b" name="input1" placeholder="请输入标题" type="text"/>
+                </view>
+                <view class="c-minheight wx-view_O9ZloQ" data-c_e_id="wx_view_5b9aaa58">
+                    <text class="c-block wx-text_Z2g1a0" data-c_e_id="wx_text_7b982e6c">地点：</text>
+                    <input class="c-block c-fullwidth wx-input_GCrZYp" data-c_e_id="wx_input_0e35c9a2" name="input2" placeholder="请输入地点" type="text"/>
+                </view>
+                <view class="c-minheight wx-view_5cz9LN" data-c_e_id="wx_view_47714ad1">
+                    <text class="c-block wx-text_PUlQH1" data-c_e_id="wx_text_95cab2bd">问题描述：</text>
+                    <input class="c-block c-fullwidth wx-input_HPNPsW" data-c_e_id="wx_input_7ab4c06a" name="input3" placeholder="请输入问题描述" type="text"/>
+                </view>
+                <view class="c-minheight wx-view_iYFcuJ" data-c_e_id="wx_view_5873a6a7">
+                    <button class="wx-button_j1uDjb" data-c_e_id="wx_button_1f067111" form-type="submit" formType="submit" hover-class="button-hover" size="mini" type="primary">
+                        提交
+                    </button>
+                </view>
+            </form>
+        </view>
+    </view>
+</view>

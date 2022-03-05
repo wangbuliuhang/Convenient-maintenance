@@ -1,0 +1,11 @@
+<view class="c-minheight wx-view_NhLyAO" >
+    <swiper class="wx-swiper_5unE7H"  indicator-dots="True" lower-threshold="50">
+        <swiper-item class="c-full wx-swiper-item_ccC1EB" />
+        <swiper-item class="c-full wx-swiper-item_8Jy2oa" />
+        <swiper-item class="c-full wx-swiper-item_AdTCgo" />
+    </swiper>    
+    <button class="wx-button_65JYxA"  hover-class="button-hover" plain="True" size="default" type="primary" open-type="bindgetuserinfo" bindtap="login">
+        <!-- <image src="../../resources/image/logo4.png"></image> -->
+        微信登录
+    </button>
+</view>

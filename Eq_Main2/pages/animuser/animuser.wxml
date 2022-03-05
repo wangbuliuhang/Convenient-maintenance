@@ -1,0 +1,81 @@
+<scroll-view class="c-minheight wx-scroll-view_uzeUhS"  lower-threshold="50" scroll-y="True" style="overflow-x: auto; overflow-y: auto;" upper-threshold="50"/>
+<view class="c-minheight wx-view_IBouyl" >
+    <view class="c-minheight wx-view_1RenUX"> 
+        <!-- <view class="swiper-tab">
+        
+        </view> -->
+        <view class="swiper-tab">
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" bindtap="swichNav">
+        <image src="../../resources/image/logo6.png"></image></view>
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" bindtap="swichNav">
+        <image src="../../resources/image/logo10.png"></image></view>
+        <!-- <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" bindtap="swichNav">
+        <image src="../../resources/image/logo9.png"></image></view> -->
+        <!-- <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" bindtap="swichNav">
+        <image src="../../resources/image/logo8.png"></image></view> -->
+        <!-- <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">已创建</view> -->
+        <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">客户</view>
+        <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">维修员</view>
+        <!-- <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">已完成</view> -->
+        </view>
+    </view>
+    <view class="weui-panel_access" >
+    <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+        <!-- 用户 -->
+        <swiper-item>
+        <view class="weui-panel__bd" wx:for="{{array0}}" wx:key="unique" data-id="{{item._id}}" bindtap="to_detail">
+            <view class="weui-media-box_appmsg">
+                <view class="weui-media-box__bd" >
+                    <text class="c-block weui-media-box__title" >{{item.name}}</text>
+                    <text class="c-block wx-text_RxVFII" bindtap="to_detail">❯</text>
+                    <view class="paddinghalfrem wx-view_adF7Mw" bindtap="to_detail">
+                        <view class="wx-view_2gazUr" >
+                            <view class="wx-view_DKe6UT1" >
+                                <!-- <image class="wx-image_6E2A1o"  mode="aspectFit" src="http://qty83k.creatby.com/materials/183835/origin/828c46823cf49a09ed541e6a4fe66419_origin.png" style="background-size:   contain; background-position:   center center; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/183835/origin/828c46823cf49a09ed541e6a4fe66419_origin.png); "/> -->
+                                <text class="c-block wx-text_9Wn0Di" >任务数：{{item.has_task}}</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        </swiper-item>
+        <!-- 维修员 -->
+        <swiper-item>
+        <view class="weui-panel__bd" wx:for="{{array1}}" wx:key="unique" data-id="{{item._openid}}">
+            <view class="weui-media-box_appmsg">
+                <view class="weui-media-box__bd" >
+                    <text class="c-block weui-media-box__title" >{{item.name}}</text>
+                    <button class="c-block btn1" bindtap="receive" wx:if="{{assign==1}}" data-id="{{item._openid}}">接受任务</button>
+                    <button class="c-block btn1"  wx:else disabled="true">接受任务</button>
+                    <test class="c-block wx-text_RxVFII"  bindtap="to_detail">❯</test>
+                    <view class="paddinghalfrem wx-view_adF7Mw" bindtap="to_detail">
+                        <view class="wx-view_2gazUr" >
+                            <view class="wx-view_DKe6UT1" >
+                                <!-- <image class="wx-image_6E2A1o"  mode="aspectFit" src="http://qty83k.creatby.com/materials/183835/origin/828c46823cf49a09ed541e6a4fe66419_origin.png" style="background-size:   contain; background-position:   center center; background-repeat:   no-repeat; background-image: url(http://qty83k.creatby.com/materials/183835/origin/828c46823cf49a09ed541e6a4fe66419_origin.png); "/> -->
+                                <text class="c-block wx-text_9Wn0Di" >任务数：{{item.has_task}} </text>
+                                <text class="c-block wx-text_9Wn0Di" >满意度：{{item.satisfaction}}</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        </swiper-item>
+    </swiper>
+    </view>
+</view>
+<!-- <view class="c-minheight wx-view_1CeAxn" data-c_e_id="wx_view_de589a7a"> -->
+    <button class="wx-button_LEV4tj" bindtap="to_user" data-c_e_id="wx_button_2f769a42" hover-class="button-hover" size="default" type="default">
+    <image class="menu-viewwx" src="../../resources/image/logo12.png"></image>
+        <text class="tttext">用户</text>
+    </button>
+    <!-- <button class="wx-button_eTcoKk" bindtap="to_add" data-c_e_id="wx_button_34d737c8" hover-class="button-hover" size="default" type="default">
+    <image class="menu-viewwx" src="../../resources/image/logo20.png"></image>
+        <text>\n添加工单</text>
+    </button> -->
+    <button class="wx-button_Cbhqbx" bindtap="to_task" data-c_e_id="wx_button_24fcf99f" hover-class="button-hover" size="default" type="default">
+    <image class="menu-viewwx" src="../../resources/image/logo6.png"></image>
+        <text class="tttext">任务</text>
+    </button>
+<!-- </view> -->

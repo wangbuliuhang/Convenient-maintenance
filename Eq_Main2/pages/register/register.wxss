@@ -1,0 +1,18 @@
+/* page/register/register.wxss */
+ view view{
+  margin-top: 50px;
+} 
+radio-group{
+  display: flex;
+  align-items: center;
+}
+radio-group radio{
+  margin-left: 40rpx;
+}
+image{
+  height: 20px;
+  width: 20px;
+}
+.sub{
+  margin-top: 80px;
+}

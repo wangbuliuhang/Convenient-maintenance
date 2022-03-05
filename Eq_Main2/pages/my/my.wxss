@@ -1,0 +1,25 @@
+/* page/my/my.wxss */
+radio-group{
+  display: flex;
+  align-items: center;
+}
+radio-group radio{
+  margin-left: 40rpx;
+}
+.pimg{
+  width:  35%; border-radius:  10px; border-color:  transparent; border-width:  0px; 
+}
+.edit{
+  margin: 15px 10px 10px 15px;
+  height: 650px;
+  border: 1px solid;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0);
+}
+.upload{
+  margin: 5px 10px 5px 10px;box-shadow: 0px 0px 3px 0px black;border-radius: 20px;border: 1px solid black;
+  font-style:  oblique;
+}
+.upload button{
+  border: 1px solid rgb(200, 200, 200);
+}

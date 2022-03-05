@@ -1,0 +1,26 @@
+<view class="c-minheight wx-view_P9R4Pk" data-c_e_id="wx_view_2c9313bb">
+    <image class="wx-image_v9arlL" bindtap="to_index" data-c_e_id="wx_image_13462ca4" mode="scaleToFill" src="http://qty83k.creatby.com/materials/183835/origin/a41e3b53488d1f13a8b43ccdd5e9f0cc_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/183835/origin/a41e3b53488d1f13a8b43ccdd5e9f0cc_origin.png); "/>
+    <view class="c-minheight wx-view_iLUAL7" data-c_e_id="wx_view_18249c37">
+        <!-- <image class="wx-image_a3hckp" data-c_e_id="wx_image_c08facd1" mode="scaleToFill" src="http://qty83k.creatby.com/materials/183835/origin/bab1d6a6124b8f75b10e513f96391a16_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/183835/origin/bab1d6a6124b8f75b10e513f96391a16_origin.png); "/> -->
+        <open-data class="wx-image_a3hckp" data-c_e_id="wx_image_c08facd1" mode="scaleToFill" type="userAvatarUrl" border-radius="1px"></open-data>
+        <!-- <text class="c-block wx-text_oqANMe" data-c_e_id="wx_text_d5e78872">微信名VX-name</text> -->
+        <open-data class="c-block wx-text_oqANMe" data-c_e_id="wx_text_d5e78872" type="userNickName"></open-data>
+    </view>
+</view>
+<view class='show_btn'>
+  <view class="information">
+      <text class="detail1"  >姓名：{{name}}</text>
+      <text class="detail1"  >e-mail：{{email}}</text>
+      <text class="detail1"  >电话：{{tel}}</text>
+      <text class="detail1" >身份:{{identify}}</text>
+      <text wx:if="{{identify=='repairman'}}" class="detail1" >满意度：{{satisfaction}}</text>
+  </view>
+  
+  <button class="change_detail" bindtap="to_information">
+    修改信息
+  </button>
+</view>
+ <button class="wx-button_HnRVH3" bindtap="loginout" data-c_e_id="wx_button_b1cc14ea" formType="submit" hover-class="button-hover" size="default">
+ <!-- <button class="wx-button_HnRVH3" bindtap="loginout" data-c_e_id="wx_button_b1cc14ea" formType="submit" hover-class="button-hover" size="default" type="warn"> -->
+                退出登录
+            </button>

@@ -1,0 +1,56 @@
+<view class="c-minheight wx-view_P9R4Pk" data-c_e_id="wx_view_2c9313bb">
+    <image class="wx-image_v9arlL" bindtap="to_index" data-c_e_id="wx_image_13462ca4" mode="scaleToFill" src="http://qty83k.creatby.com/materials/183835/origin/a41e3b53488d1f13a8b43ccdd5e9f0cc_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/183835/origin/a41e3b53488d1f13a8b43ccdd5e9f0cc_origin.png); "/>
+    <view class="c-minheight wx-view_iLUAL7" data-c_e_id="wx_view_18249c37">
+        <!-- <image class="wx-image_a3hckp" data-c_e_id="wx_image_c08facd1" mode="scaleToFill" src="http://qty83k.creatby.com/materials/183835/origin/bab1d6a6124b8f75b10e513f96391a16_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/183835/origin/bab1d6a6124b8f75b10e513f96391a16_origin.png); "/> -->
+        <open-data class="wx-image_a3hckp" data-c_e_id="wx_image_c08facd1" mode="scaleToFill" type="userAvatarUrl" border-radius="1px"></open-data>
+        <!-- <text class="c-block wx-text_oqANMe" data-c_e_id="wx_text_d5e78872">微信名VX-name</text> -->
+        <open-data class="c-block wx-text_oqANMe" data-c_e_id="wx_text_d5e78872" type="userNickName"></open-data>
+    </view>
+</view>
+<view class="edit">
+<view class="c-minheight wx-view_sRiEVQ" data-c_e_id="wx_view_f9ca917d">
+    <form class="c-minheight wx-form_MdwiHi" data-c_e_id="wx_form_d7b5cd46">
+        <view class="c-minheight wx-view_cjH2N3" data-c_e_id="wx_view_41d40461">
+            <text class="c-block wx-text_1G69sO" data-c_e_id="wx_text_9d714201">姓名：</text>
+            <input bindchange="name" class="c-block c-fullwidth wx-input_1YpBV7" data-c_e_id="wx_input_4c86345a" name="input0" placeholder="请输入真实姓名" type="text"/>
+        </view>
+        <view class="c-minheight wx-view_FARIm8" data-c_e_id="wx_view_17edcd6a">
+            <text class="c-block wx-text_M2dAS2" data-c_e_id="wx_text_110b8229" bindchange="email">e-mail：</text>
+            <input bindchange="email" class="c-block c-fullwidth wx-input_JAR1Wx" data-c_e_id="wx_input_0688ed03" name="input1" placeholder="请输入电子邮箱" type="text"/>
+        </view>
+        <view class="c-minheight wx-view_cjH2N3" data-c_e_id="wx_view_41d40461">
+            <text class="c-block wx-text_1G69sO" data-c_e_id="wx_text_9d714201">电话：</text>
+            <input bindchange="tel" class="c-block c-fullwidth wx-input_1YpBV7" data-c_e_id="wx_input_4c86345a" name="input2" placeholder="请输入手机号" type="text"/>
+        </view>
+         <view class="c-minheight wx-view_cjH2N3" data-c_e_id="wx_view_41d40461" wx:if="{{pre_identify=='repairman'}}">
+            <text class="c-block wx-text_1G69sO" data-c_e_id="wx_text_9d714201">满意度：</text>
+            <text class="c-block c-fullwidth wx-input_1YpBV7" data-c_e_id="wx_input_4c86345a">{{satisfaction}}</text>
+        </view>
+        <view wx:if="{{pre_identify=='repairman'}}" class="upload">
+            <button class="pimg" bindtap="upload_collection">上传收款码</button>
+            <button class="pimg" bindtap="collection_code">收款码</button>
+        </view>
+        <view class="c-minheight wx-view_iqStX5" data-c_e_id="wx_view5207f1ea">
+            <text class="c-block wx-text_gIhqlF" data-c_e_id="wx_text495aab70">身份:</text>
+            <radio-group class="radio-group" bindchange="identify">
+            <label class="radio c-block weui-radio-label_xOUE0n" data-c_e_id="weui_radio_label_f6c84473">
+                <radio class="wx-radio_tSEcBt" data-c_e_id="wx_radio_c512f2e5" type="radio" value="customer"/>
+                <text class="radio-text wx-text_XJkzNR" data-c_e_id="wx_text_67921f74">我是使用者</text>
+            </label>
+            <label class="radio c-block weui-radio-label_ZsqVrU" data-c_e_id="weui_radio_label_4f52bccc">
+                <radio class="wx-radio_aZPDzj" data-c_e_id="wx_radio_2669308f" type="radio" value="repairman"/>
+                <text class="radio-text wx-text_Nbf5kv" data-c_e_id="wx_text_08033f6e">我是维修员</text>
+            </label>
+            </radio-group>
+        </view>
+        <view class="c-minheight wx-view_kil8we" data-c_e_id="wx_view_96f2ba44">
+            <button class="wx-button_VWBkH3" bindtap="change" data-c_e_id="wx_button_72a2d1e9" formType="submit" hover-class="button-hover" size="default" >
+                修改
+            </button>
+            <button class="wx-button_HnRVH3" bindtap="loginout" data-c_e_id="wx_button_b1cc14ea" formType="submit" hover-class="button-hover" size="default" >
+                退出登录
+            </button>
+        </view>
+    </form>
+</view>
+</view>

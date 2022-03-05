@@ -1,0 +1,86 @@
+<view class="c-minheight wx-view_iXtiyA" data-c_e_id="wx_view_1702501d">
+    <image class="wx-image_KJSDXi" bindtap="to_index" data-c_e_id="wx_image_39d02cdc" mode="scaleToFill" src="http://qty83k.creatby.com/materials/183835/origin/a41e3b53488d1f13a8b43ccdd5e9f0cc_origin.png" style="background-size:  100% 100%; background-position:  0% 0%; background-repeat:  no-repeat; background-image: url(http://qty83k.creatby.com/materials/183835/origin/a41e3b53488d1f13a8b43ccdd5e9f0cc_origin.png); "/>
+    <text class="c-block wx-text_6dtglr" data-c_e_id="wx_text_dc152c40">详细信息</text>
+</view>
+<view class="c-minheight wx-view_4lou29" data-c_e_id="wx_view_42ed074d">
+    <view class="c-minheight wx-view_BI5Qni" data-c_e_id="wx_view_bbf1c261">
+        <text class="wx-text_17kKGZ" data-c_e_id="wx_text_cdce38a8">内容：</text>
+        <view class="c-minheight wx-view_wOtjr2" data-c_e_id="wx_view_95c6d238">
+            <text class="c-block wx-text_7brcV6" data-c_e_id="wx_text_e3170f63">创建时间：{{create_date}}</text>
+            <text class="c-block wx-text_7brcV6" data-c_e_id="wx_text_e3170f63">标题：{{title}}</text>
+            <text class="c-block wx-text_RGKmD4" data-c_e_id="wx_text_2af445bd">地点：{{place}}</text>
+            <view class="c-minheight wx-view_Zva9bF" data-c_e_id="wx_view_588e9e0b">
+                <button class="wx-button_NOecnO" bindtap="show1" data-c_e_id="wx_button_36ae3f0b"  hover-class="button-hover" plain="True" size="default" type="primary">
+                    故障图片
+                </button>
+                <button class="wx-button_LQpfF3" bindtap="show2" data-c_e_id="wx_button_789e14e8" hover-class="button-hover" plain="True" size="default" type="primary">
+                    维修图片
+                </button>
+            </view>
+            <view class="c-minheight wx-view_lxWbKE" data-c_e_id="wx_view_a86b6b9c">
+                <text class="c-block wx-text_h1PuVf" data-c_e_id="wx_text_ca0330df">故障描述：{{detail_des}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_AUYxUT" data-c_e_id="wx_view_4d038f1d">
+        <text class="c-block wx-text_7doIph" data-c_e_id="wx_text_5eb0fda0">进度：</text>
+        <view class="c-minheight wx-view_nuFHeQ" data-c_e_id="wx_view_005458b6">
+            <text class="c-block wx-text_5jftnB" data-c_e_id="wx_text_3b426048">当前进度：</text>
+            <progress class="wx-progress_bQSDL3" color="#09BB07" data-c_e_id="wx_progress_5b6e41e9" percent="{{current1}}" show-info="True" stroke-width="6"/>
+        </view>
+        <view class="c-minheight wx-view_wOtjr2" data-c_e_id="wx_view_95c6d238">
+                <text class="c-block wx-text_h1PuVf" data-c_e_id="wx_text_ca0330ms">描述：{{current2}}</text>
+                <text class="c-block wx-text_h1PuVf" data-c_e_id="wx_text_ca0330ms">最近更新时间：{{change_date}}</text>
+        </view>
+        <view class="c-minheight wx-view_c9xlm5" data-c_e_id="wx_view_59d2c07b">    
+            <button class="wx-button_UYLJSJ" bindtap="pay" data-c_e_id="wx_button_7c5117cf" hover-class="button-hover" plain="True" size="default" type="warn">
+                支付/确认收款
+            </button>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_FauYWA" data-c_e_id="wx_view_15f26aa3">
+        <text class="c-block wx-text_VJ7VbY" data-c_e_id="wx_text_2404b977">客户：</text>
+        <view class="c-minheight wx-view_98DeG4" data-c_e_id="wx_view_7811cf59">
+            <text class="c-block wx-text_LTvfx4" data-c_e_id="wx_text_35368ccd">姓名：{{name1}}</text>
+            <text class="c-block wx-text_BtlKR2" data-c_e_id="wx_text_466ffb18">电话：{{tel1}}</text>
+            <text class="c-block wx-text_YJkB7b" data-c_e_id="wx_text_8be3385f">邮箱：{{email1}}</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_halhLs" data-c_e_id="wx_view_af6c7640">
+        <text class="c-block wx-text_wXznvc" data-c_e_id="wx_text_3b6bbefa">维修员：</text>
+        <view class="c-minheight wx-view_o9pRGN" data-c_e_id="wx_view_21ec592c">
+            <text class="c-block wx-text_g7GMaA" data-c_e_id="wx_text_25123acd">姓名：{{name2}}</text>
+            <text class="c-block wx-text_ggpxIx" data-c_e_id="wx_text_e40011f8">电话：{{tel2}}</text>
+            <text class="c-block wx-text_YC045x" data-c_e_id="wx_text_3c8e11ac">邮箱：{{email2}}</text>
+            <text class="c-block wx-text_PxjgqI" data-c_e_id="wx_text_31b445ba">满意度：{{satisfaction}}</text>
+        </view>
+    </view>
+    <view class="c-minheight wx-view_GQrpP7" data-c_e_id="wx_view_61c830dc" wx:if="{{(curopenid==customer)&&(complete<3)}}">
+        <view class="c-minheight wx-view_pofyvu" data-c_e_id="wx_view_6123b043">
+            <text class="c-block wx-text_Xi4iIT" data-c_e_id="wx_text_e40465e0">满意度评价：</text>
+            <slider class="wx-slider_QZI7PY" bindchange="getslider" color="#09BB07" data-c_e_id="wx_slider2d1bb71e" max="10" min="1"  show-value="True" step="1" stroke-width="6" value="6"/>
+        </view>
+        <button class="wx-button_iGNw6f" data-c_e_id="wx_button_7a64faa9" hover-class="button-hover" size="default" type="primary" disabled='true'>
+            提交
+        </button>
+    </view>
+    <view class="c-minheight wx-view_GQrpP7" data-c_e_id="wx_view_61c830dc" wx:elif="{{(curopenid==customer)&&(complete==3)}}">
+        <view class="c-minheight wx-view_pofyvu" data-c_e_id="wx_view_6123b043">
+            <text class="c-block wx-text_Xi4iIT" data-c_e_id="wx_text_e40465e0">满意度评价：</text>
+            <slider class="wx-slider_QZI7PY" color="#09BB07" bindchange="getslider" data-c_e_id="wx_slider2d1bb71e" max="10" min="1"  show-value="True" step="1" stroke-width="6" value="6"/>
+        </view>
+        <button class="wx-button_iGNw6f" bindtap="evaluation" data-c_e_id="wx_button_7a64faa9" hover-class="button-hover" size="default" type="primary">
+            提交
+        </button>
+    </view>
+    <view class="c-minheight wx-view_GQrpP7" data-c_e_id="wx_view_61c830dc" wx:elif="{{(curopenid==customer)&&(complete==4)}}">
+        <view class="c-minheight wx-view_pofyvu" data-c_e_id="wx_view_6123b043">
+            <text class="c-block wx-text_Xi4iIT" data-c_e_id="wx_text_e40465e0">满意度评价：</text>
+            <slider class="wx-slider_QZI7PY" color="#09BB07" data-c_e_id="wx_slider2d1bb71e" max="10" min="1"  show-value="True" step="1" stroke-width="6" value="6"/>
+        </view>
+        <button class="wx-button_iGNw6f" data-c_e_id="wx_button_7a64faa9" hover-class="button-hover" size="default" type="primary" disabled='true'>
+            已完成
+        </button>
+    </view>
+    <!-- 对于维修员试一下显示不显示，如果显示那么再加一个条件 -->
+</view>

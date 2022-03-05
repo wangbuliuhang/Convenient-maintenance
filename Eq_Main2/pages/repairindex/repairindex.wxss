@@ -1,0 +1,23 @@
+/* page/userindex/userindex.wxss */
+
+.swiper-tab{
+	width: 100%;
+	border-bottom: 0rpx solid #777777;
+	text-align: center;
+	line-height: 70rpx;}
+.swiper-tab-list{  font-size: 30rpx;
+    display: inline-block;
+	width: 33%;
+	color: #000000;
+}
+.on{ color: #da7c0c;
+	border-bottom: 5rpx solid #da7c0c;}
+ 
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden;margin-bottom:90px; }
+/* .swiper-box view{
+	text-align: center;
+} */
+image{
+  height: 40px;
+  width: 40px;
+}
