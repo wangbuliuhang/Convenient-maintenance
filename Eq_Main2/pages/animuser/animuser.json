@@ -1,0 +1,53 @@
+{
+  "usingComponents": {
+    
+  },
+  "debug": true, 
+  "networkTimeout": {
+    "connectSocket": 50000, 
+    "request": 50000, 
+    "downloadFile": 50000, 
+    "uploadFile": 50000
+  },
+  "pages":[
+         "/page/userindex/userindex",
+         "/page/index/index",
+         "/page/register/register"      
+      ],
+  "window":{
+       "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "用户",
+        "navigationBarTextStyle":"black",
+        "backgroundColor": "#ffffff"
+      },
+      "tabBar": {
+        "custom": true,
+        "color": "#7A7E83",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+          {
+            "pagePath": "/page/index/index",
+            "iconPath": "/image/icon_component.png",
+            "selectedIconPath": "/image/icon_component_HL.png",
+            "text": "首页"
+          },
+          {
+            "pagePath": "/page/register/register",
+            "iconPath": "/image/icon_API.png",
+            "selectedIconPath": "/image/icon_API_HL.png",
+            "text": "添加工单"
+          }, 
+          {
+            "pagePath": "/page/userindex/userindex",
+            "iconPath": "/image/icon_API.png",
+            "selectedIconPath": "/image/icon_API_HL.png",
+            "text": "我的"
+          }
+        ]
+      },
+  "sitemapLocation": "sitemap.json"
+  
+}

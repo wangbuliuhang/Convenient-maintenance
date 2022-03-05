@@ -1,0 +1,30 @@
+{
+  "debug": true,
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#dddddd",
+    "navigationBarTitleText": "设备维修平台",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/my_detail/my_detail",
+    "pages/my/my",
+    "pages/add/add",
+    "pages/userindex/userindex",
+    "pages/animuser/animuser",
+    "pages/animindex/animindex",
+    "pages/repairindex/repairindex",
+    "pages/register/register"
+  ],
+  "networkTimeout": {
+    "connectSocket": 50000,
+    "request": 50000,
+    "downloadFile": 50000,
+    "uploadFile": 50000
+  },
+  "sitemapLocation": "sitemap.json"
+}

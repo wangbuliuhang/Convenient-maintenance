@@ -1,0 +1,24 @@
+/* page/userindex/userindex.wxss */
+
+.swiper-tab{
+	width: 100%;
+	border-bottom: 0rpx solid #777777;
+	text-align: center;
+	line-height: 70rpx;}
+.swiper-tab-list{  font-size: 30rpx;
+    display: inline-block;
+	width: 50%;
+	color: #000000;
+}
+.on{ color: #da7c0c;
+	border-bottom: 5rpx solid #da7c0c;}
+ 
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; margin-bottom:90px;}
+/* .swiper-box view{
+	text-align: center;
+} */
+image{
+  height: 40px;
+  width: 40px;
+}
+.wx-view_DKe6UT1{ display:  flex; justify-content:  space-between; align-items:  center; min-width:  130px; margin-right: 10px; transform:  rotate(0deg) scale(1) translate(-100%, 0%); transition:  all 0s ease 0s; }

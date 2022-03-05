@@ -1,0 +1,11 @@
+/* page/add/add.wxss */
+.c-minheight_wx-view_Z2bAjf{
+  display: block;
+  /* border: 3px solid; */
+}
+.cho_img{
+  display: block;
+  z-index: 3;
+  position: absolute;
+  margin-top: -80px;
+}
